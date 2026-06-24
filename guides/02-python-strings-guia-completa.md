@@ -6,6 +6,23 @@ Un **string** (o cadena de texto) es simplemente texto en Python. Puede ser una 
 
 ---
 
+## Propiedades de los Strings
+
+Esto es lo que debes tener presente al trabajar con strings en Python:
+
+| Propiedad | Descripción |
+|-----------|-------------|
+| **Inmutables** | Una vez creados, sus partes no pueden modificarse directamente. Los métodos de string no alteran el original: retornan uno nuevo. |
+| **Concatenables** | Se pueden unir con el operador `+`. |
+| **Multiplicables** | Se pueden repetir con el operador `*`. |
+| **Multilineales** | Pueden escribirse en varias líneas encerrándolos entre triples comillas simples `''' '''` o dobles `""" """`. |
+| **Tienen longitud** | Se puede medir con `len(mi_string)`. |
+| **Verificables** | Se puede comprobar si contienen una subcadena con `in` y `not in` (retornan `True` o `False`). |
+
+> Ver también: [Guía de Métodos de String](./07-python-metodos-de-string-guia-completa.md) para el listado completo de operaciones disponibles.
+
+---
+
 ## 1. Crear Strings
 
 ### Texto entre comillas
@@ -495,6 +512,44 @@ print(texto[i])        # → t
 | `index(v)`  | → derecha | Lanza `ValueError` |
 | `rindex(v)` | ← izquierda | Lanza `ValueError` |
 | `find(v)`   | → derecha | Devuelve `-1` |
+
+---
+
+## 12. Verificar Contenido — `in` y `not in`
+
+Los operadores `in` y `not in` permiten comprobar si una subcadena existe dentro de un string. El resultado es siempre un booleano (`True` o `False`).
+
+```python
+print("mundo" in "Hola mundo")      # → True
+print("Python" in "Hola mundo")     # → False
+
+print("Python" not in "Hola mundo") # → True
+print("Hola" not in "Hola mundo")   # → False
+```
+
+### Uso con variables
+
+```python
+mensaje = "Bienvenido al curso de Python"
+
+if "Python" in mensaje:
+    print("El mensaje menciona Python")
+# → El mensaje menciona Python
+```
+
+### Distinción entre mayúsculas y minúsculas
+
+`in` es sensible a mayúsculas:
+
+```python
+print("python" in "Hola Python")    # → False
+print("Python" in "Hola Python")    # → True
+
+# Para ignorar mayúsculas, normaliza primero con lower()
+print("python" in "Hola Python".lower())  # → True
+```
+
+> 💡 `in` también funciona con listas, tuplas y otros iterables en Python, no solo con strings.
 
 ---
 

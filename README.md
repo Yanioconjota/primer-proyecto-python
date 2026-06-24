@@ -29,6 +29,7 @@ Las guías en [`/guides`](./guides/index.md) son documentos de referencia rápid
 | 04 | Tipos de datos | [Guía completa](./guides/04-python-tipos-de-datos-guia-completa.md) |
 | 05 | Variables | [Guía completa](./guides/05-python-variables-guia-completa.md) |
 | 06 | `int` y `float` | [Guía completa](./guides/06-python-int-float-guia-completa.md) |
+| 07 | Métodos de string | [Guía completa](./guides/07-python-metodos-de-string-guia-completa.md) |
 
 ## Requisitos
 

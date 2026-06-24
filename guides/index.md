@@ -34,6 +34,7 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 | 9 | [Longitud de un String](./02-python-strings-guia-completa.md#9-longitud-de-un-string) |
 | 10 | [Formatear Cadenas](./02-python-strings-guia-completa.md#10-formatear-cadenas) — `.format()` y f-strings |
 | 11 | [Buscar con `index()` y `rindex()`](./02-python-strings-guia-completa.md#11-buscar-la-posición-de-un-carácter--index-y-rindex) |
+| 12 | [Verificar Contenido con `in` y `not in`](./02-python-strings-guia-completa.md#12-verificar-contenido--in-y-not-in) |
 
 ---
 
@@ -90,3 +91,13 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 | 7 | [Números Grandes y Pequeños](./06-python-int-float-guia-completa.md#7-números-grandes-y-pequeños) |
 | 8 | [Errores Comunes](./06-python-int-float-guia-completa.md#8-errores-comunes) |
 | 9 | [Resumen — Cheatsheet](./06-python-int-float-guia-completa.md#9-resumen--cheatsheet-de-números) |
+
+---
+
+### [07 · Guía Completa de Métodos de String](./07-python-metodos-de-string-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [Métodos de Análisis](./07-python-metodos-de-string-guia-completa.md#1-métodos-de-análisis) — `count()`, `find()`, `index()`, `startswith()`, `is*()` |
+| 2 | [Métodos de Transformación](./07-python-metodos-de-string-guia-completa.md#2-métodos-de-transformación) — `lower()`, `upper()`, `strip()`, `replace()`, `format()` |
+| 3 | [Métodos de Separación y Unión](./07-python-metodos-de-string-guia-completa.md#3-métodos-de-separación-y-unión) — `split()`, `join()`, `partition()` |
