@@ -248,9 +248,21 @@ print("Python"[-6])
 
 ## 8. Extraer Partes (Slicing)
 
-### Cortar un pedazo del string
+### Sintaxis completa
 
-Puedes extraer una porción del string usando `[inicio:fin]`. El carácter en `fin` **NO** se incluye.
+Las substrings se extraen con la técnica de **slicing** (*rebanar*). La sintaxis completa acepta tres parámetros:
+
+```python
+string[start:stop:step]
+```
+
+| Parámetro | Descripción |
+|-----------|-------------|
+| `start`   | Índice de inicio — **incluido** (por defecto: inicio del string) |
+| `stop`    | Índice de fin — **no incluido** (por defecto: fin del string) |
+| `step`    | Paso — cada cuántos caracteres avanzar (por defecto: `1`) |
+
+### Cortar un pedazo del string
 
 ```python
 # Desde índice 0 hasta índice 3 (sin incluir el 3)
@@ -270,6 +282,29 @@ print("Python"[2:])
 # → thon
 ```
 
+### Usar el paso (`step`)
+
+El tercer parámetro define cada cuántos caracteres avanzar.
+
+```python
+saludo = "Hola_Mundo"
+#índices: 0123456789
+
+# Desde índice 2 hasta 6 → "la_M"
+print(saludo[2:6])
+# → la_M
+
+# Desde índice 3 hasta el final, de 3 en 3 → "auo"
+print(saludo[3::3])
+# → auo
+
+# Paso negativo: recorre el string al revés
+print(saludo[::-1])
+# → odnuM_aloH
+```
+
+> 💡 `[::-1]` es el truco clásico para invertir un string en Python.
+
 ### Ejemplos prácticos
 
 ```python
@@ -284,17 +319,23 @@ print("+54 11 1234-5678"[:3])
 # Extraer las primeras 5 letras
 print("Bienvenidos al curso"[:5])
 # → Bienv
+
+# Tomar un carácter de cada dos
+print("P-y-t-h-o-n"[::2])
+# → Python
 ```
 
 ### Tabla de sintaxis de slicing
 
-| Sintaxis | Significado                       | Ejemplo con `"Python"` |
-|----------|-----------------------------------|------------------------|
-| `[n]`    | Carácter en posición n            | `[2]` → `"t"`          |
-| `[a:b]`  | Desde a hasta b (sin incluir b)   | `[1:4]` → `"yth"`      |
-| `[:b]`   | Desde el inicio hasta b           | `[:3]` → `"Pyt"`       |
-| `[a:]`   | Desde a hasta el final            | `[3:]` → `"hon"`       |
-| `[-n]`   | n-ésimo carácter desde el final   | `[-1]` → `"n"`         |
+| Sintaxis   | Significado                          | Ejemplo con `"Python"` |
+|------------|--------------------------------------|------------------------|
+| `[n]`      | Carácter en posición n               | `[2]` → `"t"`          |
+| `[a:b]`    | Desde a hasta b (sin incluir b)      | `[1:4]` → `"yth"`      |
+| `[:b]`     | Desde el inicio hasta b              | `[:3]` → `"Pyt"`       |
+| `[a:]`     | Desde a hasta el final               | `[3:]` → `"hon"`       |
+| `[-n]`     | n-ésimo carácter desde el final      | `[-1]` → `"n"`         |
+| `[a:b:s]`  | Desde a hasta b con paso s           | `[0:6:2]` → `"Pto"`    |
+| `[::-1]`   | String invertido                     | `[::-1]` → `"nohtyP"`  |
 
 ---
 
@@ -390,6 +431,73 @@ print(f"Total con IVA: ${precio * 1.21:.2f}")
 
 ---
 
+## 11. Buscar la Posición de un Carácter — `index()` y `rindex()`
+
+### `index()` — buscar de izquierda a derecha
+
+Devuelve el índice de la **primera aparición** de un carácter o cadena dentro de un string.
+
+```python
+string.index(value, start, end)
+```
+
+| Parámetro | Descripción |
+|-----------|-------------|
+| `value`   | Carácter(es) a buscar (obligatorio) |
+| `start`   | Índice desde donde empezar (opcional). Las apariciones antes de `start` se ignoran |
+| `end`     | Índice donde terminar (opcional). Las apariciones después de `end` se ignoran |
+
+```python
+texto = "programación"
+
+print(texto.index("a"))
+# → 4  (primera "a" que encuentra)
+
+print(texto.index("a", 5))
+# → 7  (ignora las "a" antes del índice 5)
+
+print(texto.index("a", 5, 9))
+# → 7  (busca solo entre índices 5 y 9)
+```
+
+> ⚠️ Si el valor no existe en el string, `index()` lanza un `ValueError`. Para evitar el error puedes usar `find()`, que devuelve `-1` si no lo encuentra.
+
+### `rindex()` — buscar de derecha a izquierda
+
+Igual que `index()`, pero la búsqueda se hace en **sentido inverso** y devuelve la última aparición.
+
+```python
+texto = "programación"
+
+print(texto.rindex("a"))
+# → 7  (última "a" del string)
+
+print(texto.rindex("a", 0, 6))
+# → 4  (última "a" buscando solo entre índices 0 y 6)
+```
+
+### Acceder al carácter en un índice conocido
+
+Una vez que tienes el índice, puedes acceder al carácter con `string[i]`:
+
+```python
+texto = "Python"
+i = texto.index("t")   # → 2
+print(texto[i])        # → t
+```
+
+> 💡 **Recordá:** el índice en primera posición es siempre `0`.
+
+### Comparativa `index()` vs `rindex()` vs `find()`
+
+| Método      | Dirección | Si no encuentra |
+|-------------|-----------|-----------------|
+| `index(v)`  | → derecha | Lanza `ValueError` |
+| `rindex(v)` | ← izquierda | Lanza `ValueError` |
+| `find(v)`   | → derecha | Devuelve `-1` |
+
+---
+
 ## Resumen General
 
 | Operación           | Sintaxis                  | Ejemplo                          |
@@ -404,3 +512,5 @@ print(f"Total con IVA: ${precio * 1.21:.2f}")
 | Longitud            | `len(str)`                | `len("Hola")` → `4`             |
 | format()            | `"Hola {}".format(var)`   | `"Mi auto es rojo"`              |
 | f-string            | `f"Hola {var}"`           | `"Mi auto es rojo"`              |
+| Buscar posición     | `str.index(v)`            | `"Python".index("t")` → `2`     |
+| Buscar inverso      | `str.rindex(v)`           | `"Python".rindex("t")` → `2`    |

@@ -33,6 +33,7 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 | 8 | [Extraer Partes (Slicing)](./02-python-strings-guia-completa.md#8-extraer-partes-slicing) |
 | 9 | [Longitud de un String](./02-python-strings-guia-completa.md#9-longitud-de-un-string) |
 | 10 | [Formatear Cadenas](./02-python-strings-guia-completa.md#10-formatear-cadenas) — `.format()` y f-strings |
+| 11 | [Buscar con `index()` y `rindex()`](./02-python-strings-guia-completa.md#11-buscar-la-posición-de-un-carácter--index-y-rindex) |
 
 ---
 
