@@ -15,6 +15,7 @@ poema2 = """Arriba de aquel cerrito
 Hay una mata de auyama
 Donde buscan los pollitos
 Muchas cosas para tu mama."""
+poema3 = "Arriba de aquel cerrito Hay una mata de ají Donde buscan los pollitos Muchas cosas para ti"
 print(poema)
 print(poema2)
 
@@ -24,3 +25,11 @@ print("sol" not in poema)
 print(f"El poema tiene {len(poema)} caracteres")
 print(poema.find("Auyama".lower()))
 print(poema.find("Ají".lower()))
+
+poemaList = poema3.split(" ")
+primeraPalabras = poemaList[0]
+ultimaPalabra = poemaList.pop()
+print(primeraPalabras, ultimaPalabra)
+poemaList.reverse()
+poemaInvertido = " ".join(poemaList)
+print(poemaInvertido)
