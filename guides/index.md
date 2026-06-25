@@ -140,10 +140,28 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 | # | Tema |
 |---|------|
 | 1 | [Crear Tuples](./10-python-tuples-guia-completa.md#1-crear-tuples) |
-| 2 | [Indexado — Acceder a Elementos](./10-python-tuples-guia-completa.md#2-indexado--acceder-a-elementos) |
-| 3 | [Casting — Convertir a Lista](./10-python-tuples-guia-completa.md#3-casting--convertir-a-lista) |
-| 4 | [Unpacking — Extraer Elementos](./10-python-tuples-guia-completa.md#4-unpacking--extraer-elementos) |
-| 5 | [Resumen — Cheatsheet](./10-python-tuples-guia-completa.md#5-resumen--cheatsheet) |
+| 2 | [Indexado y Longitud](./10-python-tuples-guia-completa.md#2-indexado-y-longitud) |
+| 3 | [Inmutabilidad](./10-python-tuples-guia-completa.md#3-inmutabilidad) |
+| 4 | [Casting — Convertir a Lista](./10-python-tuples-guia-completa.md#4-casting--convertir-a-lista) |
+| 5 | [Unpacking — Extraer Elementos](./10-python-tuples-guia-completa.md#5-unpacking--extraer-elementos) |
+| 6 | [Métodos — `count()` e `index()`](./10-python-tuples-guia-completa.md#6-métodos--count-e-index) |
+| 7 | [Resumen — Cheatsheet](./10-python-tuples-guia-completa.md#7-resumen--cheatsheet) |
+
+---
+
+### [11 · Guía Completa de Sets](./11-python-sets-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [Crear Sets](./11-python-sets-guia-completa.md#1-crear-sets) |
+| 2 | [Métodos de Elemento — `add()`, `discard()`, `remove()`, `pop()`](./11-python-sets-guia-completa.md#2-métodos-de-elemento--add-discard-remove-pop) |
+| 3 | [Copiar y Vaciar — `copy()`, `clear()`](./11-python-sets-guia-completa.md#3-copiar-y-vaciar--copy-clear) |
+| 4 | [Diferencia — `difference()`, `difference_update()`](./11-python-sets-guia-completa.md#4-diferencia--difference-difference_update) |
+| 5 | [Intersección — `intersection()`, `intersection_update()`](./11-python-sets-guia-completa.md#5-intersección--intersection-intersection_update) |
+| 6 | [Unión — `union()`, `update()`](./11-python-sets-guia-completa.md#6-unión--union-update) |
+| 7 | [Diferencia Simétrica](./11-python-sets-guia-completa.md#7-diferencia-simétrica--symmetric_difference-symmetric_difference_update) |
+| 8 | [Comparación — `isdisjoint()`, `issubset()`, `issuperset()`](./11-python-sets-guia-completa.md#8-comparación--isdisjoint-issubset-issuperset) |
+| 9 | [Resumen — Cheatsheet](./11-python-sets-guia-completa.md#9-resumen--cheatsheet) |
 
 ---
 

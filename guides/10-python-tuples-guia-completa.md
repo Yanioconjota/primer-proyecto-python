@@ -23,10 +23,12 @@ Un **tuple** (o tupla) es una estructura de datos que almacena múltiples elemen
 ## Índice
 
 1. [Crear Tuples](#1-crear-tuples)
-2. [Indexado — Acceder a Elementos](#2-indexado--acceder-a-elementos)
-3. [Casting — Convertir a Lista](#3-casting--convertir-a-lista)
-4. [Unpacking — Extraer Elementos](#4-unpacking--extraer-elementos)
-5. [Resumen — Cheatsheet](#5-resumen--cheatsheet)
+2. [Indexado y Longitud](#2-indexado-y-longitud)
+3. [Inmutabilidad](#3-inmutabilidad)
+4. [Casting — Convertir a Lista](#4-casting--convertir-a-lista)
+5. [Unpacking — Extraer Elementos](#5-unpacking--extraer-elementos)
+6. [Métodos — `count()` e `index()`](#6-métodos--count-e-index)
+7. [Resumen — Cheatsheet](#7-resumen--cheatsheet)
 
 ---
 
@@ -54,63 +56,70 @@ print(type((42)))  # → <class 'int'>  ← sin coma, es solo un int entre paré
 
 ---
 
-## 2. Indexado — Acceder a Elementos
+## 2. Indexado y Longitud
 
 Se accede igual que en listas, con corchetes `[ ]`. Los índices arrancan en `0`.
 
 ```python
-mi_tuple = (1, "dos", [3.33, "cuatro"], (5.0, 6))
+mi_tuple = (1, 2, 3, 4, (10, 20))
 
-print(mi_tuple[1])     # → dos
-print(mi_tuple[3])     # → (5.0, 6)
+print(mi_tuple[0])      # → 1
+print(mi_tuple[4])      # → (10, 20)
 
-# Acceso encadenado (el elemento es un tuple o lista)
-print(mi_tuple[3][0])  # → 5.0
-print(mi_tuple[2][1])  # → cuatro
+# Acceso encadenado (el elemento es un tuple anidado)
+print(mi_tuple[4][0])   # → 10
+
+# Longitud con len()
+print(len(mi_tuple))    # → 5
 ```
-
-> ⚠️ Intentar modificar un elemento lanza `TypeError: 'tuple' object does not support item assignment`.
 
 ---
 
-## 3. Casting — Convertir a Lista
+## 3. Inmutabilidad
+
+Los tuples **no soportan asignación de ítems**. Intentarlo lanza `TypeError`:
+
+```python
+mi_tuple = (1, 2, 3, 4, (10, 20))
+
+# Esto genera error:
+# mi_tuple[4] = 44
+# → TypeError: 'tuple' object does not support item assignment
+```
+
+Si necesitás modificar elementos, primero convertí el tuple a lista (ver sección 4).
+
+---
+
+## 4. Casting — Convertir a Lista
 
 Cuando necesitás modificar los datos de un tuple, convertilo a lista con `list()`. El resultado es una nueva lista mutable; el tuple original no cambia.
 
 ```python
-mi_tuple = (1, "dos", [3.33, "cuatro"], (5.0, 6))
+mi_tuple = (1, 2, 3, 4, (10, 20))
 
-lista_1 = list(mi_tuple)
-print(lista_1)
-# → [1, 'dos', [3.33, 'cuatro'], (5.0, 6)]
-
-lista_1.append("nuevo")
-print(lista_1)
-# → [1, 'dos', [3.33, 'cuatro'], (5.0, 6), 'nuevo']
+mi_tuple = list(mi_tuple)
+print(mi_tuple, type(mi_tuple))
+# → [1, 2, 3, 4, (10, 20)] <class 'list'>
 ```
 
 Para el camino inverso, usá `tuple()`:
 
 ```python
-de_vuelta = tuple(lista_1)
+de_vuelta = tuple(mi_tuple)
 print(type(de_vuelta))  # → <class 'tuple'>
 ```
 
 ---
 
-## 4. Unpacking — Extraer Elementos
+## 5. Unpacking — Extraer Elementos
 
 El unpacking asigna cada elemento del tuple a una variable en una sola línea. La cantidad de variables debe coincidir con la cantidad de elementos.
 
 ```python
-mi_tuple = (1, "dos", [3.33, "cuatro"], (5.0, 6))
-
-a, b, c, d = mi_tuple
-
-print(a)  # → 1
-print(b)  # → dos
-print(c)  # → [3.33, 'cuatro']
-print(d)  # → (5.0, 6)
+mi_otro_tuple = (1, 2, 3)
+x, y, z = mi_otro_tuple
+print(x, y, z)  # → 1 2 3
 ```
 
 ### Unpacking parcial con `*`
@@ -129,15 +138,42 @@ print(ultimo)   # → 4
 
 ---
 
-## 5. Resumen — Cheatsheet
+## 6. Métodos — `count()` e `index()`
+
+Los tuples tienen solo dos métodos propios (al ser inmutables no pueden tener métodos que modifiquen la estructura).
+
+### `count(valor)` — cuenta ocurrencias
+
+```python
+t = (1, 2, 3, 4, 2)
+print(t.count(2))
+# → 2
+print(f"Hay {t.count(2)} elementos con el valor 2 en tu tuple")
+```
+
+### `index(valor)` — índice de la primera ocurrencia
+
+```python
+t = (1, 2, 3, 4, 2)
+print(t.index(2))
+# → 1  (primera posición donde aparece el 2)
+```
+
+> ⚠️ Si el valor no existe, `index()` lanza `ValueError`. Verificá con `valor in t` antes si no estás seguro.
+
+---
+
+## 7. Resumen — Cheatsheet
 
 | Operación | Código | Resultado |
 |-----------|--------|-----------|
 | Crear tuple | `t = (1, "a", 3.0)` | Tuple con 3 elementos |
 | Tuple de un elemento | `t = (42,)` | `(42,)` — la coma es obligatoria |
 | Acceder por índice | `t[0]` | Primer elemento |
-| Acceso encadenado | `t[2][1]` | Elemento dentro de lista/tuple anidado |
+| Acceso encadenado | `t[2][1]` | Elemento dentro de tuple/lista anidado |
 | Longitud | `len(t)` | Número de elementos |
+| Contar ocurrencias | `t.count(val)` | Número de veces que aparece `val` |
+| Encontrar índice | `t.index(val)` | Índice de la primera ocurrencia |
 | Convertir a lista | `list(t)` | Lista mutable con los mismos elementos |
 | Convertir a tuple | `tuple(lista)` | Tuple inmutable |
 | Unpacking completo | `a, b, c = t` | Variables individuales |
