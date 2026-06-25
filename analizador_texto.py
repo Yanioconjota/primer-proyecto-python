@@ -2,7 +2,7 @@
 1. Pedir un input de text (x)
 2. Ingresar 3 letras a elección (x)
 3. Devolver cuantas veces se repiten las letras que eligió (almacenar en variables) (x)
-4. Cuantas palabras hay en todo el texto. Puedes convertir el texto en una lista y medir su longitud (x)
+4. Cuantas palabras hay en el texto completo. Puedes convertir el texto en una lista y medir su longitud (x)
 5. Devolver la primera letra y la última (x)
 6. Devolver el texto invirtiendo el orden de las palabras (x)
 7. Buscar si la palabra Python aparece en el texto. Usar booleanos para verificar si se encuentra y un diccionario para asociar el booleano a un string para mostrar al usuario (x)
