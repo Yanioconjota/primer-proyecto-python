@@ -30,6 +30,8 @@ Las guías en [`/guides`](./guides/index.md) son documentos de referencia rápid
 | 05 | Variables | [Guía completa](./guides/05-python-variables-guia-completa.md) |
 | 06 | `int` y `float` | [Guía completa](./guides/06-python-int-float-guia-completa.md) |
 | 07 | Métodos de string | [Guía completa](./guides/07-python-metodos-de-string-guia-completa.md) |
+| 08 | Listas | [Guía completa](./guides/08-python-listas-guia-completa.md) |
+| 09 | Diccionarios | [Guía completa](./guides/09-python-diccionarios-guia-completa.md) |
 | — | Preguntas y respuestas del curso | [Q&A](./guides/python-q-and-a.md) |
 
 ## Requisitos

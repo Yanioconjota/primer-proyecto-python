@@ -104,6 +104,35 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 
 ---
 
+### [08 · Guía Completa de Listas](./08-python-listas-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [Crear Listas](./08-python-listas-guia-completa.md#1-crear-listas) |
+| 2 | [Acceder a Elementos — Indexado](./08-python-listas-guia-completa.md#2-acceder-a-elementos--indexado) |
+| 3 | [Extraer Partes — Slicing](./08-python-listas-guia-completa.md#3-extraer-partes--slicing) |
+| 4 | [Longitud con `len()`](./08-python-listas-guia-completa.md#4-longitud-con-len) |
+| 5 | [Concatenar Listas](./08-python-listas-guia-completa.md#5-concatenar-listas) |
+| 6 | [Agregar Elementos — `append()`](./08-python-listas-guia-completa.md#6-agregar-elementos--append) |
+| 7 | [Eliminar Elementos — `pop()`](./08-python-listas-guia-completa.md#7-eliminar-elementos--pop) |
+| 8 | [Ordenar — `sort()`](./08-python-listas-guia-completa.md#8-ordenar--sort) |
+| 9 | [Invertir — `reverse()`](./08-python-listas-guia-completa.md#9-invertir--reverse) |
+| 10 | [Resumen — Cheatsheet](./08-python-listas-guia-completa.md#10-resumen--cheatsheet) |
+
+---
+
+### [09 · Guía Completa de Diccionarios](./09-python-diccionarios-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [Crear Diccionarios](./09-python-diccionarios-guia-completa.md#1-crear-diccionarios) |
+| 2 | [Acceder a Valores](./09-python-diccionarios-guia-completa.md#2-acceder-a-valores) |
+| 3 | [Agregar y Modificar Datos](./09-python-diccionarios-guia-completa.md#3-agregar-y-modificar-datos) |
+| 4 | [`keys()`, `values()`, `items()`](./09-python-diccionarios-guia-completa.md#4-listar-claves-valores-y-pares--keys-values-items) |
+| 5 | [Resumen — Cheatsheet](./09-python-diccionarios-guia-completa.md#5-resumen--cheatsheet) |
+
+---
+
 ### [Preguntas y respuestas del curso](./python-q-and-a.md)
 
 Recopilación de dudas y respuestas que van surgiendo a lo largo del curso.
@@ -111,3 +140,4 @@ Recopilación de dudas y respuestas que van surgiendo a lo largo del curso.
 | Tema | Pregunta |
 |------|----------|
 | Strings inmutables | [¿Por qué `nombres[0] = "K"` da `TypeError`?](./python-q-and-a.md#strings-inmutables--typeerror-str-object-does-not-support-item-assignment) |
+| Listas — `sort()` | [¿Por qué `lista.sort()` devuelve `None`?](./python-q-and-a.md#listas--sort-devuelve-none) |
