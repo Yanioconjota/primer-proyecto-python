@@ -144,3 +144,89 @@ print(lista)                  # → [1, 2, 3]  (sin cambios)
 ```
 
 ---
+
+## Diccionarios — ¿Por qué no se puede repetir una clave?
+
+**Código de referencia (`diccionarios.py`):**
+
+```python
+mi_otro_diccionario = {
+    "clave1": "valor1",
+    "clave1": "valor2",
+}
+print(f"{mi_otro_diccionario} notese que el valor de clave 1 se reescribe")
+```
+
+### ¿Por qué no pueden existir claves duplicadas en un diccionario?
+
+Un diccionario es una estructura de **mapeo clave-valor**, y cada clave debe ser única porque es el **identificador** que Python usa para encontrar su valor. Si hubiera dos entradas con la misma clave, Python no sabría cuál devolver al hacer `mi_otro_diccionario["clave1"]`.
+
+Internamente, Python usa una **tabla hash**: al insertar una clave calcula su `hash()` para determinar dónde guardar el valor. Si esa clave ya existe, simplemente **sobreescribe** el valor anterior.
+
+---
+
+### ¿Python lanza un error si repito una clave?
+
+No. Python **no lanza excepción**; gana silenciosamente el último valor asignado:
+
+```python
+mi_otro_diccionario = {
+    "clave1": "valor1",  # se guarda "valor1"
+    "clave1": "valor2",  # sobreescribe → "valor2"
+}
+print(mi_otro_diccionario)  # → {'clave1': 'valor2'}
+```
+
+---
+
+### ¿Cómo guardo múltiples valores para la misma clave?
+
+Usando una **lista como valor**:
+
+```python
+mi_diccionario = {
+    "clave1": ["valor1", "valor2"],
+}
+```
+
+---
+
+## Diccionarios y Listas — ¿Existe el operador spread `...` como en JavaScript?
+
+Sí. Python usa `*` para listas y `**` para diccionarios.
+
+### Listas — `*`
+
+```python
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+
+combinada = [*lista1, *lista2]   # equivale a [...lista1, ...lista2]
+print(combinada)  # → [1, 2, 3, 4, 5, 6]
+```
+
+### Diccionarios — `**`
+
+```python
+base = {"nombre": "Juan", "edad": 20}
+extras = {"peso": 80.5, "altura": 1.85}
+
+cliente = {**base, **extras}     # equivale a { ...base, ...extras }
+print(cliente)
+# → {'nombre': 'Juan', 'edad': 20, 'peso': 80.5, 'altura': 1.85}
+
+# Sobreescribir una clave (gana el último)
+actualizado = {**base, "edad": 25}
+print(actualizado)  # → {'nombre': 'Juan', 'edad': 25}
+```
+
+### Comparación JS → Python
+
+| JS | Python |
+|----|--------|
+| `[...a, ...b]` | `[*a, *b]` |
+| `{ ...a, ...b }` | `{**a, **b}` |
+| `{ ...obj, key: val }` | `{**obj, "key": val}` |
+| `fn(...args)` (named) | `fn(**dict)` |
+
+---

@@ -127,9 +127,23 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 |---|------|
 | 1 | [Crear Diccionarios](./09-python-diccionarios-guia-completa.md#1-crear-diccionarios) |
 | 2 | [Acceder a Valores](./09-python-diccionarios-guia-completa.md#2-acceder-a-valores) |
-| 3 | [Agregar y Modificar Datos](./09-python-diccionarios-guia-completa.md#3-agregar-y-modificar-datos) |
-| 4 | [`keys()`, `values()`, `items()`](./09-python-diccionarios-guia-completa.md#4-listar-claves-valores-y-pares--keys-values-items) |
-| 5 | [Resumen — Cheatsheet](./09-python-diccionarios-guia-completa.md#5-resumen--cheatsheet) |
+| 3 | [Estructuras Anidadas](./09-python-diccionarios-guia-completa.md#3-estructuras-anidadas) |
+| 4 | [Agregar, Modificar y Mutar Valores](./09-python-diccionarios-guia-completa.md#4-agregar-modificar-y-mutar-valores) |
+| 5 | [`keys()`, `values()`, `items()`](./09-python-diccionarios-guia-completa.md#5-listar-claves-valores-y-pares--keys-values-items) |
+| 6 | [Unpacking — `*` y `**`](./09-python-diccionarios-guia-completa.md#6-unpacking----y-) |
+| 7 | [Resumen — Cheatsheet](./09-python-diccionarios-guia-completa.md#7-resumen--cheatsheet) |
+
+---
+
+### [10 · Guía Completa de Tuples](./10-python-tuples-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [Crear Tuples](./10-python-tuples-guia-completa.md#1-crear-tuples) |
+| 2 | [Indexado — Acceder a Elementos](./10-python-tuples-guia-completa.md#2-indexado--acceder-a-elementos) |
+| 3 | [Casting — Convertir a Lista](./10-python-tuples-guia-completa.md#3-casting--convertir-a-lista) |
+| 4 | [Unpacking — Extraer Elementos](./10-python-tuples-guia-completa.md#4-unpacking--extraer-elementos) |
+| 5 | [Resumen — Cheatsheet](./10-python-tuples-guia-completa.md#5-resumen--cheatsheet) |
 
 ---
 
