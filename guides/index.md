@@ -101,3 +101,13 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 | 1 | [Métodos de Análisis](./07-python-metodos-de-string-guia-completa.md#1-métodos-de-análisis) — `count()`, `find()`, `index()`, `startswith()`, `is*()` |
 | 2 | [Métodos de Transformación](./07-python-metodos-de-string-guia-completa.md#2-métodos-de-transformación) — `lower()`, `upper()`, `strip()`, `replace()`, `format()` |
 | 3 | [Métodos de Separación y Unión](./07-python-metodos-de-string-guia-completa.md#3-métodos-de-separación-y-unión) — `split()`, `join()`, `partition()` |
+
+---
+
+### [Preguntas y respuestas del curso](./python-q-and-a.md)
+
+Recopilación de dudas y respuestas que van surgiendo a lo largo del curso.
+
+| Tema | Pregunta |
+|------|----------|
+| Strings inmutables | [¿Por qué `nombres[0] = "K"` da `TypeError`?](./python-q-and-a.md#strings-inmutables--typeerror-str-object-does-not-support-item-assignment) |
