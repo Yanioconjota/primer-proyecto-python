@@ -154,14 +154,24 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 | # | Tema |
 |---|------|
 | 1 | [Crear Sets](./11-python-sets-guia-completa.md#1-crear-sets) |
-| 2 | [Métodos de Elemento — `add()`, `discard()`, `remove()`, `pop()`](./11-python-sets-guia-completa.md#2-métodos-de-elemento--add-discard-remove-pop) |
-| 3 | [Copiar y Vaciar — `copy()`, `clear()`](./11-python-sets-guia-completa.md#3-copiar-y-vaciar--copy-clear) |
-| 4 | [Diferencia — `difference()`, `difference_update()`](./11-python-sets-guia-completa.md#4-diferencia--difference-difference_update) |
-| 5 | [Intersección — `intersection()`, `intersection_update()`](./11-python-sets-guia-completa.md#5-intersección--intersection-intersection_update) |
-| 6 | [Unión — `union()`, `update()`](./11-python-sets-guia-completa.md#6-unión--union-update) |
-| 7 | [Diferencia Simétrica](./11-python-sets-guia-completa.md#7-diferencia-simétrica--symmetric_difference-symmetric_difference_update) |
-| 8 | [Comparación — `isdisjoint()`, `issubset()`, `issuperset()`](./11-python-sets-guia-completa.md#8-comparación--isdisjoint-issubset-issuperset) |
-| 9 | [Resumen — Cheatsheet](./11-python-sets-guia-completa.md#9-resumen--cheatsheet) |
+| 2 | [Restricciones — Qué puede y no puede contener](./11-python-sets-guia-completa.md#2-restricciones--qué-puede-y-no-puede-contener) |
+| 3 | [Operador `in` — Verificar membresía](./11-python-sets-guia-completa.md#3-operador-in--verificar-membresía) |
+| 4 | [Métodos de Elemento — `add()`, `remove()`, `discard()`, `pop()`](./11-python-sets-guia-completa.md#4-métodos-de-elemento--add-remove-discard-pop) |
+| 5 | [Vaciar — `clear()`](./11-python-sets-guia-completa.md#5-vaciar--clear) |
+| 6 | [Operaciones de Conjuntos — `union()`, `intersection()`, `difference()`](./11-python-sets-guia-completa.md#6-operaciones-de-conjuntos--union-intersection-difference) |
+| 7 | [Resumen — Cheatsheet](./11-python-sets-guia-completa.md#7-resumen--cheatsheet) |
+
+---
+
+### [12 · Guía Completa de Booleanos](./12-python-booleanos-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [Declarar Booleanos](./12-python-booleanos-guia-completa.md#1-declarar-booleanos) |
+| 2 | [Operadores de Comparación](./12-python-booleanos-guia-completa.md#2-operadores-de-comparación) |
+| 3 | [Operadores Lógicos — `and`, `or`, `not`](./12-python-booleanos-guia-completa.md#3-operadores-lógicos--and-or-not) |
+| 4 | [Valores Truthy y Falsy](./12-python-booleanos-guia-completa.md#4-valores-truthy-y-falsy) |
+| 5 | [Resumen — Cheatsheet](./12-python-booleanos-guia-completa.md#5-resumen--cheatsheet) |
 
 ---
 
