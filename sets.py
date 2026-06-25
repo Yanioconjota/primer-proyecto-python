@@ -1,93 +1,50 @@
-mi_set_a = {1, 2, "tres"}
-mi_set_b = {3, "tres"}
+mi_set = set([1,2,3,4,5])
+#mi_set = set(1,2,3,4,5) - Python entiende que recibe 5 argumentos
+print(mi_set, type(mi_set))
 
-print(mi_set_a, type(mi_set_a))
+#Al no declarar "clave": "valor", Python entiende que es un set
+otro_set = {1, 2, 3, 4, 5}
+print(otro_set, type(otro_set))
 
-# add() — agrega un elemento
-mi_set_a.add(5)
-print(mi_set_a)  # → {1, 2, 'tres', 5}
+# print(mi_set[0]) al no poseer un orden no son subscribibles
+# mi_set[0] = 5 Tampoco soportan asignación de items
 
-# copy() y clear()
-mi_set_c = mi_set_a.copy()
-print(mi_set_c)
-mi_set_a.clear()
-print(mi_set_a)  # → set()
+set_con_repetidos = {1, 1, 2, 3, 4, 5, 5, 5}
+# No mostrará error. Solo mostrará valores únicos
+print(set_con_repetidos)
 
-# Reiniciamos para los ejemplos siguientes
-mi_set_a = {1, 2, "tres"}
-mi_set_b = {3, "tres"}
+another_set = set([1, 2, "Tres", False, (5, 10)])
+print(another_set)
 
-# discard() — remueve un elemento (sin error si no existe)
-mi_set_a.discard("tres")
-print(mi_set_a)  # → {1, 2}
+# los sets no permiten ni listas, ni diccionarios ya que son elementos mutables
+# set_con_mutables = {1, 2, "Tres", False, [1], {"nombre": "Janio"}}
 
-# remove() — remueve un elemento (arroja error si no existe)
-mi_set_a = {1, 2, "tres"}
-mi_set_a.remove("tres")
-print(mi_set_a)  # → {1, 2}
+# Al igual que en las listas y diccionarios podemos preguntar si un elemento está o no en el set
+print("Tres" in another_set)
 
-# pop() — elimina y retorna un elemento al azar
-mi_set_a = {1, 2, "tres"}
-aleatorio = mi_set_a.pop()
-print(aleatorio)
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s3 = s1.union(s2)
+print(f"el método union, une los 2 sets sin repetidos {s3}")
 
-# Reiniciamos
-mi_set_a = {1, 2, "tres"}
-mi_set_b = {3, "tres"}
+s3.add(6)
+s3.add(4)
+# Si el elemento no existe lo agrega, si existe lo omite sin error
+print(s3)
 
-# difference() — elementos únicamente en A
-mi_set_c = mi_set_a.difference(mi_set_b)
-print(mi_set_c)  # → {1, 2}
+# s1.remove(6) con remove, si el elemento no existe da error
 
-# difference_update() — remueve de A los elementos comunes con B
-mi_set_a.difference_update(mi_set_b)
-print(mi_set_a)  # → {1, 2}
+s1.remove(1)
+print(s1)
 
-# Reiniciamos
-mi_set_a = {1, 2, "tres"}
-mi_set_b = {3, "tres"}
+# Con discard, no remueve un elemento que no existe y devuelve el set original
+s1.discard(1)
+print(s1)
 
-# intersection() — elementos comunes a A y B
-mi_set_c = mi_set_a.intersection(mi_set_b)
-print(mi_set_c)  # → {'tres'}
+# Como los sets no tienen orden elige un elemento aleatorio, puede ser útil para elegir un número al azar
+sorteo = s2.pop()
+print(sorteo)
 
-# intersection_update() — mantiene solo los comunes en A
-mi_set_b.intersection_update(mi_set_a)
-print(mi_set_b)  # → {'tres'}
-
-# Reiniciamos
-mi_set_a = {1, 2, "tres"}
-mi_set_b = {3, "tres"}
-
-# union() — combina A y B eliminando duplicados
-mi_set_c = mi_set_a.union(mi_set_b)
-print(mi_set_c)  # → {1, 2, 3, 'tres'}
-
-# update() — inserta en A los elementos de B
-mi_set_a.update(mi_set_b)
-print(mi_set_a)  # → {1, 2, 3, 'tres'}
-
-# Reiniciamos
-mi_set_a = {1, 2, "tres"}
-mi_set_b = {3, "tres"}
-
-# symmetric_difference() — todo excepto los comunes
-mi_set_c = mi_set_b.symmetric_difference(mi_set_a)
-print(mi_set_c)  # → {1, 2, 3}
-
-# symmetric_difference_update()
-mi_set_b.symmetric_difference_update(mi_set_a)
-print(mi_set_b)  # → {1, 2, 3}
-
-# Reiniciamos
-mi_set_a = {1, 2, "tres"}
-mi_set_b = {3, "tres"}
-
-# isdisjoint() — True si no tienen elementos en común
-print(mi_set_a.isdisjoint(mi_set_b))  # → False
-
-# issubset() — True si todos los elementos de B están en A
-print(mi_set_b.issubset(mi_set_a))    # → False
-
-# issuperset() — True si A contiene todos los elementos de B
-print(mi_set_a.issuperset(mi_set_b))  # → False
+# Clear limpia el set completo
+s2.clear()
+print(s2)
