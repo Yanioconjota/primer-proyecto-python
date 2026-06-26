@@ -32,6 +32,14 @@ Las guías en [`/guides`](./guides/index.md) son documentos de referencia rápid
 | 07 | Métodos de string | [Guía completa](./guides/07-python-metodos-de-string-guia-completa.md) |
 | 08 | Listas | [Guía completa](./guides/08-python-listas-guia-completa.md) |
 | 09 | Diccionarios | [Guía completa](./guides/09-python-diccionarios-guia-completa.md) |
+| 10 | Tuples | [Guía completa](./guides/10-python-tuples-guia-completa.md) |
+| 11 | Sets | [Guía completa](./guides/11-python-sets-guia-completa.md) |
+| 12 | Booleanos | [Guía completa](./guides/12-python-booleanos-guia-completa.md) |
+| 13 | Operadores de comparación | [Guía completa](./guides/13-python-operadores-comparacion-guia-completa.md) |
+| 14 | Operadores (aritméticos, comparación y lógicos) | [Guía completa](./guides/14-python-operadores-guia-completa.md) |
+| 15 | Control de flujo — `if` / `elif` / `else` | [Guía completa](./guides/15-python-if-elif-else-guia-completa.md) |
+| 08 | Listas | [Guía completa](./guides/08-python-listas-guia-completa.md) |
+| 09 | Diccionarios | [Guía completa](./guides/09-python-diccionarios-guia-completa.md) |
 | — | Preguntas y respuestas del curso | [Q&A](./guides/python-q-and-a.md) |
 
 ## Requisitos

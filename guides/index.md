@@ -175,6 +175,46 @@ Colección de guías de referencia rápida para aprender Python desde cero.
 
 ---
 
+### [13 · Guía Completa de Operadores de Comparación](./13-python-operadores-comparacion-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [Tabla de Operadores](./13-python-operadores-comparacion-guia-completa.md#1-tabla-de-operadores) — `==`, `!=`, `>`, `<`, `>=`, `<=` |
+| 2 | [`==` — Igual a](./13-python-operadores-comparacion-guia-completa.md#2----igual-a) |
+| 3 | [`!=` — Diferente a](./13-python-operadores-comparacion-guia-completa.md#3----diferente-a) |
+| 4 | [`>` y `<` — Mayor / Menor que](./13-python-operadores-comparacion-guia-completa.md#4--y---mayor--menor-que) |
+| 5 | [`>=` y `<=` — Mayor o igual / Menor o igual que](./13-python-operadores-comparacion-guia-completa.md#5--y---mayor-o-igual--menor-o-igual-que) |
+| 6 | [Comparar Expresiones](./13-python-operadores-comparacion-guia-completa.md#6-comparar-expresiones) |
+| 7 | [Comparar Strings](./13-python-operadores-comparacion-guia-completa.md#7-comparar-strings) |
+| 8 | [Guardar el Resultado en una Variable](./13-python-operadores-comparacion-guia-completa.md#8-guardar-el-resultado-en-una-variable) |
+| 9 | [Resumen — Cheatsheet](./13-python-operadores-comparacion-guia-completa.md#9-resumen--cheatsheet) |
+
+---
+
+### [14 · Guía Completa de Operadores](./14-python-operadores-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [Operadores Aritméticos](./14-python-operadores-guia-completa.md#1-operadores-aritméticos) — `+`, `-`, `*`, `/`, `//`, `%`, `**` |
+| 2 | [Operadores de Comparación](./14-python-operadores-guia-completa.md#2-operadores-de-comparación) — `==`, `!=`, `>`, `<`, `>=`, `<=` |
+| 3 | [Operadores Lógicos](./14-python-operadores-guia-completa.md#3-operadores-lógicos) — `and`, `or`, `not` |
+
+---
+
+### [15 · Guía Completa de Control de Flujo — `if` / `elif` / `else`](./15-python-if-elif-else-guia-completa.md)
+
+| # | Tema |
+|---|------|
+| 1 | [`if` básico](./15-python-if-elif-else-guia-completa.md#1-estructura-if-básica) |
+| 2 | [`if` / `else`](./15-python-if-elif-else-guia-completa.md#2-if--else) |
+| 3 | [`if` / `elif` / `else`](./15-python-if-elif-else-guia-completa.md#3-if--elif--else) |
+| 4 | [Condiciones compuestas](./15-python-if-elif-else-guia-completa.md#4-condiciones-compuestas) — `and`, `or`, `not` |
+| 5 | [`if` anidado](./15-python-if-elif-else-guia-completa.md#5-if-anidado) |
+| 6 | [Condicional en una línea (ternario)](./15-python-if-elif-else-guia-completa.md#6-condicional-en-una-línea-ternario) |
+| 7 | [`match` / `case`](./15-python-if-elif-else-guia-completa.md#7-match--case-python-310) — Python 3.10+ |
+
+---
+
 ### [Preguntas y respuestas del curso](./python-q-and-a.md)
 
 Recopilación de dudas y respuestas que van surgiendo a lo largo del curso.
