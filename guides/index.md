@@ -2,224 +2,29 @@
 
 Colección de guías de referencia rápida para aprender Python desde cero.
 
----
-
-## Índice de Contenido
-
-### [01 · Guía Completa de `print()`](./01-python-print-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Lo Básico](./01-python-print-guia-completa.md#1-lo-básico) |
-| 2 | [Comillas Simples y Dobles](./01-python-print-guia-completa.md#2-comillas-simples-y-dobles) |
-| 3 | [Imprimir Varias Cosas a la Vez](./01-python-print-guia-completa.md#3-imprimir-varias-cosas-a-la-vez) |
-| 4 | [Controlar los Saltos de Línea](./01-python-print-guia-completa.md#4-controlar-los-saltos-de-línea) |
-| 5 | [Caracteres Especiales](./01-python-print-guia-completa.md#5-caracteres-especiales) |
-| 6 | [Texto en Varias Líneas](./01-python-print-guia-completa.md#6-texto-en-varias-líneas) |
+> Toda la documentación está consolidada en un único archivo: **[python-guia-completa.md](./python-guia-completa.md)**
 
 ---
 
-### [02 · Guía Completa de Strings](./02-python-strings-guia-completa.md)
+## Contenido de la guía
 
-| # | Tema |
-|---|------|
-| 1 | [Crear Strings](./02-python-strings-guia-completa.md#1-crear-strings) |
-| 2 | [Comillas Simples vs Dobles](./02-python-strings-guia-completa.md#2-comillas-simples-vs-dobles) |
-| 3 | [Strings Multilínea](./02-python-strings-guia-completa.md#3-strings-multilínea) |
-| 4 | [Caracteres Especiales](./02-python-strings-guia-completa.md#4-caracteres-especiales) |
-| 5 | [Unir Strings (Concatenación)](./02-python-strings-guia-completa.md#5-unir-strings-concatenación) |
-| 6 | [Repetir Strings](./02-python-strings-guia-completa.md#6-repetir-strings) |
-| 7 | [Acceder a Caracteres](./02-python-strings-guia-completa.md#7-acceder-a-caracteres) |
-| 8 | [Extraer Partes (Slicing)](./02-python-strings-guia-completa.md#8-extraer-partes-slicing) |
-| 9 | [Longitud de un String](./02-python-strings-guia-completa.md#9-longitud-de-un-string) |
-| 10 | [Formatear Cadenas](./02-python-strings-guia-completa.md#10-formatear-cadenas) — `.format()` y f-strings |
-| 11 | [Buscar con `index()` y `rindex()`](./02-python-strings-guia-completa.md#11-buscar-la-posición-de-un-carácter--index-y-rindex) |
-| 12 | [Verificar Contenido con `in` y `not in`](./02-python-strings-guia-completa.md#12-verificar-contenido--in-y-not-in) |
-
----
-
-### [03 · Guía Completa de `input()`](./03-python-input-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [¿Qué hace `input()`?](./03-python-input-guia-completa.md#1-qué-hace-input) |
-| 2 | [La Sintaxis de `input()`](./03-python-input-guia-completa.md#2-la-sintaxis-de-input) |
-| 3 | [`input()` Siempre Devuelve Texto](./03-python-input-guia-completa.md#3-input-siempre-devuelve-texto) |
-| 4 | [Combinar `input()` con Texto](./03-python-input-guia-completa.md#4-combinar-input-con-texto) |
-| 5 | [Convertir a Números](./03-python-input-guia-completa.md#5-convertir-a-números) |
-| 6 | [Ejemplos Prácticos](./03-python-input-guia-completa.md#6-ejemplos-prácticos) |
-| 7 | [Resumen Rápido](./03-python-input-guia-completa.md#7-resumen-rápido) |
-
----
-
-### [04 · Guía Completa de Tipos de Datos](./04-python-tipos-de-datos-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Tipos Simples](./04-python-tipos-de-datos-guia-completa.md#1-tipos-simples) — `str`, `int`, `float`, `bool` |
-| 2 | [Colecciones](./04-python-tipos-de-datos-guia-completa.md#2-colecciones) — `list`, `tuple`, `dict`, `set` |
-| 3 | [Tabla Comparativa](./04-python-tipos-de-datos-guia-completa.md#3-tabla-comparativa) |
-| 4 | [Verificar el Tipo con `type()`](./04-python-tipos-de-datos-guia-completa.md#4-verificar-el-tipo-con-type) |
-
----
-
-### [05 · Guía Completa de Variables](./05-python-variables-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [¿Qué es una Variable?](./05-python-variables-guia-completa.md#1-qué-es-una-variable) |
-| 2 | [Reglas para Nombrar Variables](./05-python-variables-guia-completa.md#2-reglas-para-nombrar-variables) — legibilidad, espacios, hispanismos, números, símbolos, palabras clave |
-| 3 | [Reasignar Variables](./05-python-variables-guia-completa.md#3-reasignar-variables) |
-| 4 | [Tipos de Datos en Variables](./05-python-variables-guia-completa.md#4-tipos-de-datos-en-variables) — tipado dinámico, conversiones implícitas y explícitas (`int()`, `float()`) |
-| 5 | [Usar Variables con `print()`](./05-python-variables-guia-completa.md#5-usar-variables-con-print) |
-| 6 | [Operaciones con Variables](./05-python-variables-guia-completa.md#6-operaciones-con-variables) |
-| 7 | [Múltiples Variables](./05-python-variables-guia-completa.md#7-múltiples-variables) |
-| 8 | [Resumen](./05-python-variables-guia-completa.md#8-resumen) |
-
----
-
-### [06 · Guía Completa de Integers y Floats](./06-python-int-float-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Los Dos Tipos de Números](./06-python-int-float-guia-completa.md#1-los-dos-tipos-de-números) — `int` vs `float` |
-| 2 | [Operaciones Básicas](./06-python-int-float-guia-completa.md#2-operaciones-básicas) — `+`, `-`, `*`, `/` |
-| 3 | [Operaciones Especiales](./06-python-int-float-guia-completa.md#3-operaciones-especiales) — `//`, `%`, `**` |
-| 4 | [Mezclar `int` y `float`](./06-python-int-float-guia-completa.md#4-mezclar-int-y-float) |
-| 5 | [Convertir entre Tipos](./06-python-int-float-guia-completa.md#5-convertir-entre-tipos) — `int()`, `float()` |
-| 6 | [Redondear Números](./06-python-int-float-guia-completa.md#6-redondear-números) — `round(number, ndigits)`, entero vs decimal |
-| 7 | [Números Grandes y Pequeños](./06-python-int-float-guia-completa.md#7-números-grandes-y-pequeños) |
-| 8 | [Errores Comunes](./06-python-int-float-guia-completa.md#8-errores-comunes) |
-| 9 | [Resumen — Cheatsheet](./06-python-int-float-guia-completa.md#9-resumen--cheatsheet-de-números) |
-
----
-
-### [07 · Guía Completa de Métodos de String](./07-python-metodos-de-string-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Métodos de Análisis](./07-python-metodos-de-string-guia-completa.md#1-métodos-de-análisis) — `count()`, `find()`, `index()`, `startswith()`, `is*()` |
-| 2 | [Métodos de Transformación](./07-python-metodos-de-string-guia-completa.md#2-métodos-de-transformación) — `lower()`, `upper()`, `strip()`, `replace()`, `format()` |
-| 3 | [Métodos de Separación y Unión](./07-python-metodos-de-string-guia-completa.md#3-métodos-de-separación-y-unión) — `split()`, `join()`, `partition()` |
-
----
-
-### [08 · Guía Completa de Listas](./08-python-listas-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Crear Listas](./08-python-listas-guia-completa.md#1-crear-listas) |
-| 2 | [Acceder a Elementos — Indexado](./08-python-listas-guia-completa.md#2-acceder-a-elementos--indexado) |
-| 3 | [Extraer Partes — Slicing](./08-python-listas-guia-completa.md#3-extraer-partes--slicing) |
-| 4 | [Longitud con `len()`](./08-python-listas-guia-completa.md#4-longitud-con-len) |
-| 5 | [Concatenar Listas](./08-python-listas-guia-completa.md#5-concatenar-listas) |
-| 6 | [Agregar Elementos — `append()`](./08-python-listas-guia-completa.md#6-agregar-elementos--append) |
-| 7 | [Eliminar Elementos — `pop()`](./08-python-listas-guia-completa.md#7-eliminar-elementos--pop) |
-| 8 | [Ordenar — `sort()`](./08-python-listas-guia-completa.md#8-ordenar--sort) |
-| 9 | [Invertir — `reverse()`](./08-python-listas-guia-completa.md#9-invertir--reverse) |
-| 10 | [Resumen — Cheatsheet](./08-python-listas-guia-completa.md#10-resumen--cheatsheet) |
-
----
-
-### [09 · Guía Completa de Diccionarios](./09-python-diccionarios-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Crear Diccionarios](./09-python-diccionarios-guia-completa.md#1-crear-diccionarios) |
-| 2 | [Acceder a Valores](./09-python-diccionarios-guia-completa.md#2-acceder-a-valores) |
-| 3 | [Estructuras Anidadas](./09-python-diccionarios-guia-completa.md#3-estructuras-anidadas) |
-| 4 | [Agregar, Modificar y Mutar Valores](./09-python-diccionarios-guia-completa.md#4-agregar-modificar-y-mutar-valores) |
-| 5 | [`keys()`, `values()`, `items()`](./09-python-diccionarios-guia-completa.md#5-listar-claves-valores-y-pares--keys-values-items) |
-| 6 | [Unpacking — `*` y `**`](./09-python-diccionarios-guia-completa.md#6-unpacking----y-) |
-| 7 | [Resumen — Cheatsheet](./09-python-diccionarios-guia-completa.md#7-resumen--cheatsheet) |
-
----
-
-### [10 · Guía Completa de Tuples](./10-python-tuples-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Crear Tuples](./10-python-tuples-guia-completa.md#1-crear-tuples) |
-| 2 | [Indexado y Longitud](./10-python-tuples-guia-completa.md#2-indexado-y-longitud) |
-| 3 | [Inmutabilidad](./10-python-tuples-guia-completa.md#3-inmutabilidad) |
-| 4 | [Casting — Convertir a Lista](./10-python-tuples-guia-completa.md#4-casting--convertir-a-lista) |
-| 5 | [Unpacking — Extraer Elementos](./10-python-tuples-guia-completa.md#5-unpacking--extraer-elementos) |
-| 6 | [Métodos — `count()` e `index()`](./10-python-tuples-guia-completa.md#6-métodos--count-e-index) |
-| 7 | [Resumen — Cheatsheet](./10-python-tuples-guia-completa.md#7-resumen--cheatsheet) |
-
----
-
-### [11 · Guía Completa de Sets](./11-python-sets-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Crear Sets](./11-python-sets-guia-completa.md#1-crear-sets) |
-| 2 | [Restricciones — Qué puede y no puede contener](./11-python-sets-guia-completa.md#2-restricciones--qué-puede-y-no-puede-contener) |
-| 3 | [Operador `in` — Verificar membresía](./11-python-sets-guia-completa.md#3-operador-in--verificar-membresía) |
-| 4 | [Métodos de Elemento — `add()`, `remove()`, `discard()`, `pop()`](./11-python-sets-guia-completa.md#4-métodos-de-elemento--add-remove-discard-pop) |
-| 5 | [Vaciar — `clear()`](./11-python-sets-guia-completa.md#5-vaciar--clear) |
-| 6 | [Operaciones de Conjuntos — `union()`, `intersection()`, `difference()`](./11-python-sets-guia-completa.md#6-operaciones-de-conjuntos--union-intersection-difference) |
-| 7 | [Resumen — Cheatsheet](./11-python-sets-guia-completa.md#7-resumen--cheatsheet) |
-
----
-
-### [12 · Guía Completa de Booleanos](./12-python-booleanos-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Declarar Booleanos](./12-python-booleanos-guia-completa.md#1-declarar-booleanos) |
-| 2 | [Operadores de Comparación](./12-python-booleanos-guia-completa.md#2-operadores-de-comparación) |
-| 3 | [Operadores Lógicos — `and`, `or`, `not`](./12-python-booleanos-guia-completa.md#3-operadores-lógicos--and-or-not) |
-| 4 | [Valores Truthy y Falsy](./12-python-booleanos-guia-completa.md#4-valores-truthy-y-falsy) |
-| 5 | [Resumen — Cheatsheet](./12-python-booleanos-guia-completa.md#5-resumen--cheatsheet) |
-
----
-
-### [13 · Guía Completa de Operadores de Comparación](./13-python-operadores-comparacion-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Tabla de Operadores](./13-python-operadores-comparacion-guia-completa.md#1-tabla-de-operadores) — `==`, `!=`, `>`, `<`, `>=`, `<=` |
-| 2 | [`==` — Igual a](./13-python-operadores-comparacion-guia-completa.md#2----igual-a) |
-| 3 | [`!=` — Diferente a](./13-python-operadores-comparacion-guia-completa.md#3----diferente-a) |
-| 4 | [`>` y `<` — Mayor / Menor que](./13-python-operadores-comparacion-guia-completa.md#4--y---mayor--menor-que) |
-| 5 | [`>=` y `<=` — Mayor o igual / Menor o igual que](./13-python-operadores-comparacion-guia-completa.md#5--y---mayor-o-igual--menor-o-igual-que) |
-| 6 | [Comparar Expresiones](./13-python-operadores-comparacion-guia-completa.md#6-comparar-expresiones) |
-| 7 | [Comparar Strings](./13-python-operadores-comparacion-guia-completa.md#7-comparar-strings) |
-| 8 | [Guardar el Resultado en una Variable](./13-python-operadores-comparacion-guia-completa.md#8-guardar-el-resultado-en-una-variable) |
-| 9 | [Resumen — Cheatsheet](./13-python-operadores-comparacion-guia-completa.md#9-resumen--cheatsheet) |
-
----
-
-### [14 · Guía Completa de Operadores](./14-python-operadores-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [Operadores Aritméticos](./14-python-operadores-guia-completa.md#1-operadores-aritméticos) — `+`, `-`, `*`, `/`, `//`, `%`, `**` |
-| 2 | [Operadores de Comparación](./14-python-operadores-guia-completa.md#2-operadores-de-comparación) — `==`, `!=`, `>`, `<`, `>=`, `<=` |
-| 3 | [Operadores Lógicos](./14-python-operadores-guia-completa.md#3-operadores-lógicos) — `and`, `or`, `not` |
-
----
-
-### [15 · Guía Completa de Control de Flujo — `if` / `elif` / `else`](./15-python-if-elif-else-guia-completa.md)
-
-| # | Tema |
-|---|------|
-| 1 | [`if` básico](./15-python-if-elif-else-guia-completa.md#1-estructura-if-básica) |
-| 2 | [`if` / `else`](./15-python-if-elif-else-guia-completa.md#2-if--else) |
-| 3 | [`if` / `elif` / `else`](./15-python-if-elif-else-guia-completa.md#3-if--elif--else) |
-| 4 | [Condiciones compuestas](./15-python-if-elif-else-guia-completa.md#4-condiciones-compuestas) — `and`, `or`, `not` |
-| 5 | [`if` anidado](./15-python-if-elif-else-guia-completa.md#5-if-anidado) |
-| 6 | [Condicional en una línea (ternario)](./15-python-if-elif-else-guia-completa.md#6-condicional-en-una-línea-ternario) |
-| 7 | [`match` / `case`](./15-python-if-elif-else-guia-completa.md#7-match--case-python-310) — Python 3.10+ |
-
----
-
-### [Preguntas y respuestas del curso](./python-q-and-a.md)
-
-Recopilación de dudas y respuestas que van surgiendo a lo largo del curso.
-
-| Tema | Pregunta |
-|------|----------|
-| Strings inmutables | [¿Por qué `nombres[0] = "K"` da `TypeError`?](./python-q-and-a.md#strings-inmutables--typeerror-str-object-does-not-support-item-assignment) |
-| Listas — `sort()` | [¿Por qué `lista.sort()` devuelve `None`?](./python-q-and-a.md#listas--sort-devuelve-none) |
+| # | Sección | Temas principales |
+|---|---------|-------------------|
+| 01 | [print()](./python-guia-completa.md#01-print) | Texto, números, `sep`, `end`, secuencias de escape, multilínea |
+| 02 | [Strings](./python-guia-completa.md#02-strings) | Crear, comillas, multilínea, concatenar, slicing, `len()`, f-strings, `index()`, `in` |
+| 03 | [input()](./python-guia-completa.md#03-input) | Sintaxis, conversión a número, ejemplos prácticos |
+| 04 | [Tipos de Datos](./python-guia-completa.md#04-tipos-de-datos) | `str`, `int`, `float`, `bool`, `list`, `tuple`, `dict`, `set`, `type()` |
+| 05 | [Variables](./python-guia-completa.md#05-variables) | Reglas de nombres, reasignación, tipado dinámico, conversiones |
+| 06 | [Integers y Floats](./python-guia-completa.md#06-integers-y-floats) | Operaciones, `//`, `%`, `**`, `round()`, errores comunes |
+| 07 | [Métodos de String](./python-guia-completa.md#07-metodos-de-string) | Análisis, transformación, separación y unión |
+| 08 | [Listas](./python-guia-completa.md#08-listas) | Indexado, slicing, `append()`, `pop()`, `sort()`, `reverse()` |
+| 09 | [Diccionarios](./python-guia-completa.md#09-diccionarios) | Acceso, estructuras anidadas, `keys()`, `values()`, `items()`, unpacking |
+| 10 | [Tuples](./python-guia-completa.md#10-tuples) | Inmutabilidad, indexado, casting, unpacking, `count()`, `index()` |
+| 11 | [Sets](./python-guia-completa.md#11-sets) | Restricciones, `add()`, `remove()`, `union()`, `intersection()` |
+| 12 | [Booleanos](./python-guia-completa.md#12-booleanos) | Operadores lógicos, truthy/falsy, tabla de verdad |
+| 13 | [Operadores de Comparación](./python-guia-completa.md#13-operadores-de-comparacion) | `==`, `!=`, `>`, `<`, `>=`, `<=` |
+| 14 | [Operadores](./python-guia-completa.md#14-operadores) | Aritméticos, comparación, lógicos |
+| 15 | [Control de Flujo — if/elif/else](./python-guia-completa.md#15-control-de-flujo-if-elif-else) | if, elif, else, anidado, ternario, match/case |
+| 16 | [match / case](./python-guia-completa.md#16-match-case) | Literales, comodín, patrones estructurales, dicts anidados |
+| 17 | [Loops for](./python-guia-completa.md#17-loops-for) | Estructura, iterar listas/strings/dicts, `enumerate()`, `join()`, acumuladores |
+| — | [Preguntas y Respuestas](./python-guia-completa.md#preguntas-y-respuestas-del-curso) | Dudas frecuentes del curso |
